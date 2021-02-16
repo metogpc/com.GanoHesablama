@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="749.0" style="-fx-background-color: #B3C7D6FF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.GanoHesaplamaProjesi.HesapController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="87.0" prefWidth="750.0" styleClass="title" stylesheets="@menuStill.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="AİBÜ GANO HESAPLAMA" textFill="#2460a7">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="407.0" prefWidth="185.0" styleClass="list" stylesheets="@menuStill.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="114.0" styleClass="list-label" stylesheets="@menuStill.css" text="Derslerim" textFill="#2460a7">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#ekleBtn" prefHeight="30.0" prefWidth="54.0" styleClass="ekleBtn" stylesheets="@menuStill.css" text="Ekle" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <ListView fx:id="derslerim" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="433.0" prefWidth="184.0" style="-fx-background-color: #B3C7D6FF;" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox prefHeight="407.0" prefWidth="276.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="184.0" style="-fx-background-color: #B3C7D6FF; -fx-border-radius: 5;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="162.0" styleClass="sonuclar" stylesheets="@menuStill.css">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="60.0" text="Ders Adı:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="secilenDersAdi" prefHeight="28.0" prefWidth="101.0" text="Label">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="162.0" styleClass="sonuclar" stylesheets="@menuStill.css">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="60.0" text="Kredi">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="secilenEcts" prefHeight="28.0" prefWidth="101.0" text="Label">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="162.0" styleClass="sonuclar" stylesheets="@menuStill.css">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="60.0" text="Notunuz:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="secilenNot" prefHeight="28.0" prefWidth="101.0" text="Label">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="407.0" prefWidth="238.0" styleClass="genelOrt" stylesheets="@menuStill.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="210.0" style="-fx-background-color: #B3C7D6FF;" text="Genel Ortalama" textFill="#2460a7">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="162.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="60.0" text="GANO:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="gano" prefHeight="28.0" prefWidth="101.0" text="0.00">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <VBox alignment="BOTTOM_LEFT" prefHeight="407.0" prefWidth="190.0" style="-fx-background-color: #B3C7D6FF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#kaydetBtn" prefHeight="41.0" prefWidth="91.0" styleClass="kydetBtn" stylesheets="@menuStill.css" text="Kaydet">
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <ColorAdjust />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#silBtn" prefHeight="41.0" prefWidth="91.0" styleClass="silBtn" stylesheets="@menuStill.css" text="Sil">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

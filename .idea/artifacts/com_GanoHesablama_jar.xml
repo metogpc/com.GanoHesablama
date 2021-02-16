@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="com.GanoHesablama:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="com.GanoHesablama.jar">
+      <element id="module-output" name="com.GanoHesablama" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib/javafx.web.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
