@@ -90,7 +90,7 @@ public class DersData {
                 dersListesi.add(ders);
 
             }
-                System.out.println("Getirilen dersler:"+dersListesi);
+                System.out.println("Getirilen harfler:"+dersListesi.get(0).getHarf());
         } catch (FileNotFoundException e) {
             System.out.println("Dosya Bulunamadı");
         } catch (IOException e) {

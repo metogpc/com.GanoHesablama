@@ -12,6 +12,7 @@ public class Main extends Application {
     @Override
     public void init() throws Exception {
         DersData.getInstance().DersleriDosyadanGetir();
+        DersData.getInstance().GanoHesapla();
         super.init();
     }
 
