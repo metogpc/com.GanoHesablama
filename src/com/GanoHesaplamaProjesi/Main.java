@@ -19,7 +19,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("" + "ectsHesabi.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("" + "view/ectsHesabi.fxml"));
         primaryStage.setTitle("Aibu GANO Hesaplama");
         primaryStage.setScene(new Scene(root, 749, 494));
         primaryStage.show();
