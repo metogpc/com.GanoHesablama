@@ -1,4 +1,4 @@
-package com.GanoHesaplamaProjesi;
+package com.GanoHesaplamaProjesi.Model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

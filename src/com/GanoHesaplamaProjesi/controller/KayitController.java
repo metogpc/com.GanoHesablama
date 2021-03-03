@@ -1,5 +1,8 @@
-package com.GanoHesaplamaProjesi;
+package com.GanoHesaplamaProjesi.controller;
 
+
+import com.GanoHesaplamaProjesi.Model.Ders;
+import com.GanoHesaplamaProjesi.Model.DersData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

@@ -1,5 +1,6 @@
 package com.GanoHesaplamaProjesi;
 
+import com.GanoHesaplamaProjesi.Model.DersData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

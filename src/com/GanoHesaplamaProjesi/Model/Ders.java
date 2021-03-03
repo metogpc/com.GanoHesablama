@@ -1,4 +1,4 @@
-package com.GanoHesaplamaProjesi;
+package com.GanoHesaplamaProjesi.Model;
 
 public class Ders {
     private String ad;
